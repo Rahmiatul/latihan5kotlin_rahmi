@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,9 +18,14 @@ class ListViewActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_list_view)
         lv_item = findViewById(R.id.btnListView)
-
         val namaHewan = listOf( "Kupu-kupu", "beruang", "Gajah", "Kelinci", "kura-kura")
         lv_item.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, namaHewan)
+
+        lv_item.setOnItemClickListener{
+            parent,view, position, id ->
+            Toast.makeText(this, "Anda Memilih : ${namaHewan[position]}",
+                Toast.LENGTH_SHORT).show()
+        }
 
     }
 }

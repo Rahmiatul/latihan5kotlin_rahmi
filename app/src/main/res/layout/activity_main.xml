@@ -68,4 +68,25 @@
         android:layout_height="wrap_content"
         android:text="List View"
         android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recycle View"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnBuah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buah"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie"
+        android:layout_marginTop="16dp" />
 </LinearLayout>

@@ -13,6 +13,42 @@
         android:theme="@style/Theme.Latihan5kotlin_rahmi"
         tools:targetApi="31">
         <activity
+            android:name=".RvCardMovie"
+            android:exported="false" />
+        <activity
+            android:name=".customImage"
+            android:exported="false" />
+        <activity
+            android:name=".rvBuku"
+            android:exported="false" />
+        <activity
+            android:name=".item_customimage"
+            android:exported="false" />
+        <activity
+            android:name=".CustomImageRecycleView"
+            android:exported="false" />
+        <activity
+            android:name=".model.ModelBuah"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".RecycleViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".model.ModelBuku"
+            android:exported="false" />
+        <activity
+            android:name=".model.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.BukuAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".RecycleviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeActivity"
             android:exported="false" />
         <activity

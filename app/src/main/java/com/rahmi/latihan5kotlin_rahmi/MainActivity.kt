@@ -1,5 +1,6 @@
 package com.rahmi.latihan5kotlin_rahmi
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -9,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,6 +22,9 @@ class MainActivity : AppCompatActivity() {
         val btnGanjilGenap = findViewById<Button>(R.id.btnGanjilGenap)
         val btnPassingData = findViewById<Button>(R.id.btnPassingData)
         val btnListView = findViewById<Button>(R.id.btnListView)
+        val btnRecycleView = findViewById<Button>(R.id.btnRecycleView)
+        val btnBuah = findViewById<Button>(R.id.btnBuah)
+        val btnMovie = findViewById<Button>(R.id.btnMovie)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -45,6 +50,16 @@ class MainActivity : AppCompatActivity() {
         }
         btnListView.setOnClickListener {
             startActivity(Intent(this, ListViewActivity::class.java))
+        }
+        btnRecycleView.setOnClickListener {
+            startActivity(Intent(this, rvBuku::class.java))
+        }
+        btnBuah.setOnClickListener {
+            startActivity(Intent(this, customImage::class.java))
+        }
+
+        btnMovie.setOnClickListener {
+            startActivity(Intent(this, RvCardMovie::class.java))
         }
     }
 }
